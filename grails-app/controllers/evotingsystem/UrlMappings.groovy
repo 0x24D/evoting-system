@@ -1,4 +1,4 @@
-package evoting.system
+package evotingsystem
 
 class UrlMappings {
 

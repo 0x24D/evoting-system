@@ -1,4 +1,4 @@
-package evoting.system
+package evotingsystem
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration

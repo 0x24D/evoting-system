@@ -2,7 +2,7 @@
 grails:
     profile: web
     codegen:
-        defaultPackage: evoting.system
+        defaultPackage: evotingsystem
     gorm:
         reactor:
             # Whether to translate GORM events into Reactor events

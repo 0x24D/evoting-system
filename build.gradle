@@ -11,7 +11,7 @@ buildscript {
 }
 
 version "0.1"
-group "evoting.system"
+group "evotingsystem"
 
 apply plugin:"eclipse"
 apply plugin:"idea"
