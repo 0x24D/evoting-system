@@ -14,5 +14,4 @@ class Address {
     String postcode
     String constituency
 
-
 }
