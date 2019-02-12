@@ -1,5 +1,76 @@
-# Created by https://www.gitignore.io/api/gradle,grails,intellij
-# Edit at https://www.gitignore.io/?templates=gradle,grails,intellij
+
+# Created by https://www.gitignore.io/api/eclipse,gradle,grails,intellij,netbeans
+# Edit at https://www.gitignore.io/?templates=eclipse,gradle,grails,intellij,netbeans
+
+### Eclipse ###
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
+
+### Eclipse Patch ###
+# Eclipse Core
+.project
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Annotation Processing
+.apt_generated
+
+.sts4-cache/
 
 ### Grails ###
 # .gitignore for Grails 1.2 and 1.3
@@ -92,6 +163,7 @@ atlassian-ide-plugin.xml
 # Cursive Clojure plugin
 .idea/replstate.xml
 
+
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
 crashlytics.properties
@@ -115,9 +187,18 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
+### NetBeans ###
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
 ### Gradle ###
 .gradle
-/build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -134,4 +215,6 @@ gradle-app.setting
 ### Gradle Patch ###
 **/build/
 
-# End of https://www.gitignore.io/api/gradle,grails,intellij
+# End of https://www.gitignore.io/api/eclipse,gradle,grails,intellij,netbeans
+
+.DS_Store
