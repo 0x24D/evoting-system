@@ -4,4 +4,6 @@ class UserRegistry {
 
     static constraints = {
     }
+
+    SetOfUsers users
 }

@@ -4,4 +4,6 @@ class Permission {
 
     static constraints = {
     }
+
+    String operation
 }
