@@ -7,6 +7,6 @@ class Session {
 
     String publicUsername
     Date validThrough
-    PermissionMap permissions
+    Map<String> permissions // should be Map<Permission>
     String signature
 }

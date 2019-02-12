@@ -5,5 +5,5 @@ class SystemRoles {
     static constraints = {
     }
 
-    SetOfRoles allRoles
+    Set<String> allRoles // should be Set<Role>
 }

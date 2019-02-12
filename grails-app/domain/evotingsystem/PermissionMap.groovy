@@ -5,7 +5,7 @@ class PermissionMap {
     static constraints = {
     }
 
-    Map <UI, SetOfPermissions> permissionsMap
-    Map <UI, SetOfPermissions> defaultPermissionsMap
+    Map <String, String> permissionsMap // should be Map<UI, SetOfPermissions>
+    Map <String, String> defaultPermissionsMap // should be Map<UI, SetOfPermissions>
 
 }

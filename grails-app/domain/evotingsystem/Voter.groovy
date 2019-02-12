@@ -6,6 +6,6 @@ class Voter {
     }
 
     boolean voted
-    Date DOB
+    Date dOB
     String address // needs to be of type class Address
 }

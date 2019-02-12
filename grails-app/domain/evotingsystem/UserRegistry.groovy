@@ -5,5 +5,5 @@ class UserRegistry {
     static constraints = {
     }
 
-    SetOfUsers users
+    Map<String> users // should be a map of Users
 }
