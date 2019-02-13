@@ -17,12 +17,11 @@ jobs:
           key: grailsapp-{{ checksum "build.gradle" }}-{{ checksum "gradle.properties" }}
       - run: chmod +x gradlew
       - run: ./gradlew --console=plain testClasses  
-      - run: ./gradlew --console=plain integrationTestClasses  
       - save_cache: 
           paths:
             - ~/.gradle
           key: grailsapp-{{ checksum "build.gradle" }}-{{ checksum "gradle.properties" }}
-      - run: ./gradlew --console=plain check  
+      - run: ./gradlew --console=plain test 
       - store_artifacts: 
           path: build/reports
           destination: reports
