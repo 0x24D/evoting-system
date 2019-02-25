@@ -6,7 +6,7 @@ class Candidate {
     }
 
     String name
-    String party // needs to be of type Party class
-    String constituency // needs to be of type constituency class
+    Party party
+    Constituency constituency
     String description
 }

@@ -7,5 +7,5 @@ class Constituency {
 
     String name
     int minimumAge
-    String votingSystem // needs to be of type VotingSystem Class
+    System votingSystem
 }

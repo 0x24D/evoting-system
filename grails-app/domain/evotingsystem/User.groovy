@@ -9,7 +9,7 @@ class User {
     String name
     String email
     String password
-    String role // should be type role
+    Roles roles
     int authenticationAttempts
 
 }

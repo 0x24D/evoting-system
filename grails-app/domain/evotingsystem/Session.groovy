@@ -7,6 +7,6 @@ class Session {
 
     String publicUsername
     Date validThrough
-    Set<String> permissions // should be Set<Permission>
+    Set<Permission> permissions
     String signature
 }

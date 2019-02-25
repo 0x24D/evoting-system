@@ -6,5 +6,5 @@ class Roles {
     }
 
     String roleName
-    Set<String> permissions // should be Set<Permission>
+    Set<Permission> permissions
 }
