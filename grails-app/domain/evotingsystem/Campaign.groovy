@@ -8,11 +8,11 @@ class Campaign {
     String id
     String name
     int totalVotes
-    String candidates // needs to be a set candidates class
-    Map<String, Integer> votes // the string will need to be of type candidate
+    Set<Candidate> candidates
+    Map<Candidate, Integer> votes
     String type
     String active // will be a status enum
-    String constituencies // needs to be a set of constituency class
+    Set<Constituency> constituencies
     Date startDate
     Date endDate
 
