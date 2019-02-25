@@ -9,7 +9,7 @@ class Address {
     String lineTwo
     String town
     String county
-    String coutry
+    String country
     String postcode
     String constituency
 
