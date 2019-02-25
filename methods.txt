@@ -1,0 +1,126 @@
+	Address
+---------------------------------
+Address(lineOne, lineTwo, town, county, country, postcode, constituency)
+bool validateAddress(name, postcode)
+bool validateAddress(name, postcode, constituency)
+
+	Admin
+---------------------------------
+Admin (name, email, password)
+void viewVoteeList()
+void viewResults()
+
+	AdminUI
+---------------------------------
+void display()
+
+	Auditor
+---------------------------------
+Auditor(name, email, password, authentication, pollingStation)
+void setVoterAsVoted()
+
+	AuditorUI
+---------------------------------
+void display()
+
+	AuthenticationBroker
+---------------------------------
+Session authenticate(username, password)
+void signSession(Session)
+
+	Campaign
+---------------------------------
+Campaign(name, candidates, type, constituencies, startDate, endDate)
+bool assignCandidateToConstituency(candidate, constituency)
+
+	Candidate
+---------------------------------
+Candidate(name, party, constituency, description)
+Candidate addCandidate()
+bool removeCandidate(id)
+
+	Constituency
+---------------------------------
+Constituency(name, minimumAge, votingSystem)
+validateConstituency(postcode, constituency)
+
+	LoginUI
+---------------------------------
+LoginUI()
+void login(username, password)
+
+	Party
+---------------------------------
+Party(name, description)
+Party addParty()
+bool removeParty(id)
+
+	Permission
+---------------------------------
+Permission(operation)
+bool equals(Object)
+int hashCode()
+
+	PermissionMap
+---------------------------------
+PermissionMap(permissions, defaultPermission)
+
+
+	PollingStation
+---------------------------------
+PollingStation(address, openTime, closeTime)
+SetOfUsers findAuditors()
+
+	Roles
+---------------------------------
+Roles(roleName, permissions)
+
+	Session
+---------------------------------
+Session(publicUsername, validThrough, permissions, signature)
+bool checkSignature()
+bool isValid()
+void authorise(UI, operation)
+
+	System
+---------------------------------
+System(station, voters, campaigns, language)
+Campaign addCampaign()
+User addUser()
+User editUser(username)
+Campaign editCampaign(campaignId)
+bool removeUser(username)
+bool removeCampaign(campaignId)
+void selectLanguage(language)
+
+	SystemRoles
+---------------------------------
+Roles(availableRoles)
+
+	UI
+---------------------------------
+void UI(session)
+void magnify()
+
+	User
+---------------------------------
+User(name, email, password, role)
+bool validateEmail(email)
+String hash(string)
+void addAuthenticationAttempt()
+void restAuthenticationAttempts()
+bool validatePassword(password)
+
+	UserRegistry
+---------------------------------
+UserRegistry(users)
+User findUser(username)
+
+	Voter
+---------------------------------
+Voter(name, email, password, DOB, address)
+bool castVote(campaignId, candidate)
+
+	VoterUI
+---------------------------------
+void display()
